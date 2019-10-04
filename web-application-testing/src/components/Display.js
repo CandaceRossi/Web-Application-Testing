@@ -4,8 +4,8 @@ function Dashboard(props) {
   return (
     <div className="App">
       <h3>Player At Bat: </h3>
-      <div>balls: {props.balls}</div>
-      <div>strikes: {props.strikes}</div>
+      <div>balls: {props.ball}</div>
+      <div>strikes: {props.strike}</div>
     </div>
   );
 }

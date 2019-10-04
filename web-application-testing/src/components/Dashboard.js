@@ -1,25 +1,23 @@
 import React from "react";
 
 function Dashboard(props) {
-  //   const [dashboard, setDashboard] = useState({
-  //     balls: 0,
-  //     strikes: 0,
-  //     foul: 0,
-  //     hit: 0
-  //   });
   return (
     <div className="App">
-      <button className="strikes" onClick={() => {}}>
+      <display />
+      <button
+        className="strikes"
+        onClick={() => props.strikeChange(props.strike)}
+      >
         strike
       </button>
 
-      <button className="ball" onClick={() => {}}>
+      <button className="ball" onClick={() => props.ballChange(props.ball)}>
         ball
       </button>
-      <button className="foul" onClick={() => {}}>
+      <button className="foul" onClick={() => props.foulChange(props.foul)}>
         foul
       </button>
-      <button className="hit" onClick={() => {}}>
+      <button className="hit" onClick={() => props.hitChange(props.hit)}>
         hit
       </button>
     </div>
